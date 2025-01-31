@@ -1,0 +1,473 @@
+/* Apply the background image to the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  background-color:black; /* Replace with the path to your image */
+  background-size: cover; /* This ensures the image covers the entire body */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  color: #fff; /* Text color to stand out on the background */
+}
+
+/* Apply the background image to the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  background-color: black; /* Replace with the path to your image */
+  background-size: cover; /* This ensures the image covers the entire body */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  color: #fff; /* Text color to stand out on the background */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-image {
+  height: 70px; /* Adjust the size of your logo */
+  width: auto;
+}
+
+/* Navbar links styling */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+/* Link styling */
+.navbar-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00FFFF; /* Neon Blue */
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF; /* Glow effect */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+  color: #FFFFFF; /* White text on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active link animation */
+.navbar-links a:active {
+  animation: neon-pulse 1s infinite;
+}
+
+/* Neon Pulse Animation */
+@keyframes neon-pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #e884cc, 0 0 20px #a021b0, 0 0 30px #8a1180;
+  }
+  50% {
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF, 0 0 50px #000000;
+  }
+}
+
+/* Additional styling for the app container */
+.app-container {
+  position: relative;
+  z-index: 1; /* Ensures content stays above the background */
+  padding: 20px; /* Add padding to the container */
+}
+
+/* Home Page Styles */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7); /* Slight dark background */
+  color: #fff; /* Text color */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading Styles */
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00FFFF; /* Neon Blue */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.home-container p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Links container styles */
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between links */
+}
+
+/* Individual Link Styles */
+.home-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00FFFF; /* Neon Blue */
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+  padding: 10px 20px;
+  border: 2px solid #00FFFF; /* Neon Border */
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on links */
+.home-link:hover {
+  color: #FFFFFF; /* White text */
+  background-color: #00FFFF; /* Neon Blue background */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active link animation */
+.home-link:active {
+  animation: neon-pulse 1s infinite;
+}
+
+/* Neon Pulse Animation */
+@keyframes neon-pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #e884cc, 0 0 20px #a021b0, 0 0 30px #8a1180;
+  }
+  50% {
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF, 0 0 50px #000000;
+  }
+}
+/* Profile Page Styles */
+.profile-container {
+  background: rgba(0, 0, 0, 0.7); /* Slight dark background */
+  color: #fff; /* Text color */
+  padding: 50px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Profile Header */
+.profile-header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00FFFF; /* Neon Blue border */
+  box-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button styles for Hire Me and Live Chat */
+.profile-button {
+  position: absolute;
+  bottom: -10px;
+  background-color: #00FFFF; /* Neon Blue */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-button-left {
+  left: -20px;
+}
+
+.profile-button-right {
+  right: -20px;
+}
+
+.profile-button:hover {
+  background-color: #FFFFFF; /* White background */
+  color: #00FFFF; /* Neon text */
+  transform: scale(1.1);
+}
+
+/* Profile Name and Age */
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00FFFF; /* Neon Blue */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  margin-top: 20px;
+}
+
+.profile-age {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Profile Bio */
+.profile-bio {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Hire Me Form */
+.hire-me-form-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.hire-me-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hire-me-form label {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.hire-me-form input,
+.hire-me-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #00FFFF;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+.hire-me-form button {
+  background: #00FFFF;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-form button:hover {
+  background: #fff;
+  color: #00FFFF;
+  transform: scale(1.1);
+}
+
+/* Navigation buttons */
+.profile-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.profile-nav-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00FFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-nav-button:hover {
+  background-color: #00FFFF;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    text-align: center;
+  }
+  .profile-image-container {
+    display: block;
+  }
+  .profile-buttons {
+    flex-direction: column;
+  }
+}
+/* Contact Us Page Styles */
+.contact-container {
+  background: rgba(0, 0, 0, 0.7); /* Dark background */
+  color: #fff; /* White text */
+  padding: 50px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00FFFF; /* Neon Blue */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contact-list {
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #00FFFF;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-item a:hover {
+  color: #00FFFF; /* Neon Blue on hover */
+}
+
+.contact-item:hover .contact-icon {
+  color: #FFFFFF; /* White icon on hover */
+}
+
+/* Contact Form */
+.contact-form-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 80%;
+  max-width: 600px;
+  color: #fff;
+}
+
+.contact-form-container h2 {
+  font-size: 2.5rem;
+  color: #00FFFF;
+  margin-bottom: 20px;
+}
+
+.contact-form-container label {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #00FFFF;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.contact-form-container button {
+  background: #00FFFF;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover {
+  background: #fff;
+  color: #00FFFF;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-list {
+    width: 100%;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+}
