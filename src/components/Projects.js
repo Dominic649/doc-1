@@ -5,17 +5,17 @@ const projectsData = [
   {
     title: "Project 1",
     description: "This is an amazing project that showcases my web development skills.",
-    link: "https://github.com/project1",
+    link: "git remote add origin https://github.com/Dominic649/ludo.git",
   },
   {
     title: "Project 2",
     description: "A creative design project with a stunning user interface.",
-    link: "https://github.com/project2",
+    link: "git remote add origin https://github.com/Dominic649/my-profile.git",
   },
   {
     title: "Project 3",
     description: "A full-stack web application with powerful backend integration.",
-    link: "https://github.com/project3",
+    link: "git remote add origin https://github.com/Dominic649/doc-1.git",
   },
   // Add more projects as necessary
 ];
